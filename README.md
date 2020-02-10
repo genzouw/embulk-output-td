@@ -30,13 +30,13 @@ Refer to "Create seed configuration file" on the following page for the descript
 
 ```bash
 # Generate load.yml from seed.yml
-$ docker run --rm -i -t --volumes-from td-config \
+$ docker run --rm -i -t \
     -v $PWD:/workdir \
     --workdir /workdir \
     genzouw/embulk-output-td guess seed.yml -o load.yml
 
 # Import to Treasure Data using load.yml
-$ docker run --rm -i -t --volumes-from td-config \
+$ docker run --rm -i -t \
     -v $PWD:/workdir \
     --workdir /workdir \
     genzouw/embulk-output-td run load.yml
