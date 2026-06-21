@@ -4,7 +4,6 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/genzouw/embulk-output-td.svg?style=for-the-badge)](https://hub.docker.com/r/genzouw/embulk-output-td/)
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/genzouw/embulk-output-td.svg?style=for-the-badge)](https://hub.docker.com/r/genzouw/embulk-output-td/)
 
-
 [![dockeri.co](https://dockeri.co/image/genzouw/embulk-output-td)](https://hub.docker.com/r/genzouw/embulk-output-td)
 
 ## Description
@@ -12,7 +11,6 @@
 This is a container for importing data into Treasure Data using Embulk.
 
 *Please contact me anytime if you have a problem or request! My information is posted at the bottom of this document.*
-
 
 ## Requirements
 
@@ -45,7 +43,6 @@ $ docker run --rm -i -t \
 ## License
 
 This software is released under the MIT License, see LICENSE.
-
 
 ## Help
 

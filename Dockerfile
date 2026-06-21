@@ -6,7 +6,7 @@ RUN apt-get update \
   && apt-get upgrade -y \
   && apt-get -y install \
     --no-install-recommends \
-    curl \
+    curl=7.74.* \
   && apt-get clean \
   && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
