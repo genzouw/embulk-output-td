@@ -10,11 +10,11 @@
 
 This is a container for importing data into Treasure Data using Embulk.
 
-_Please contact me anytime if you have a problem or request! My information is posted at the bottom of this document._
+*Please contact me anytime if you have a problem or request! My information is posted at the bottom of this document.*
 
 ## Requirements
 
-- [Docker](https://www.docker.com/)
+* [Docker](https://www.docker.com/)
 
 ## Installation
 
@@ -24,7 +24,7 @@ _Please contact me anytime if you have a problem or request! My information is p
 
 Refer to "Create seed configuration file" on the following page for the description method of **"load.yml"**.
 
-- [Bulk Import from CSV files &ndash; Arm Treasure Data](https://support.treasuredata.com/hc/en-us/articles/360001495428-Bulk-Import-from-CSV-files)
+* [Bulk Import from CSV files &ndash; Arm Treasure Data](https://support.treasuredata.com/hc/en-us/articles/360001495428-Bulk-Import-from-CSV-files)
 
 ```bash
 # Generate load.yml from seed.yml
@@ -54,7 +54,7 @@ File a [Github issue](https://github.com/genzouw/embulk-output-td/issues), send 
 
 [genzouw](https://genzouw.com)
 
-- Twitter : @genzouw ( https://twitter.com/genzouw )
-- Facebook : genzouw ( https://www.facebook.com/genzouw )
-- LinkedIn : genzouw ( https://www.linkedin.com/in/genzouw/ )
-- Gmail : genzouw@gmail.com
+* Twitter   : @genzouw ( https://twitter.com/genzouw )
+* Facebook  : genzouw ( https://www.facebook.com/genzouw )
+* LinkedIn  : genzouw ( https://www.linkedin.com/in/genzouw/ )
+* Gmail     : genzouw@gmail.com
