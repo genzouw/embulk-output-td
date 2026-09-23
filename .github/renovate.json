@@ -37,7 +37,7 @@
         "fix は release 生成ツールがリリース対象として扱うため、Dependabot 時代と同じ chore に固定する。"
       ],
       "matchPackageNames": [
-        "*"
+        "**"
       ],
       "semanticCommitType": "chore"
     },
