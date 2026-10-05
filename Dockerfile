@@ -14,12 +14,12 @@ RUN apt-get update \
 
 ENV HOME /root
 
-RUN curl \
-  --create-dirs -o $HOME/.embulk/bin/embulk -L "https://github.com/embulk/embulk/releases/download/v0.10.50/embulk-0.10.50.jar" \
+RUN curl -fsSL \
+  --create-dirs -o $HOME/.embulk/bin/embulk "https://github.com/embulk/embulk/releases/download/v0.10.50/embulk-0.10.50.jar" \
   && chmod +x $HOME/.embulk/bin/embulk \
-  && curl \
+  && curl -fsSL \
     --create-dirs -o $HOME/.embulk/lib/jruby-complete-9.4.3.0.jar \
-    -L "https://repo1.maven.org/maven2/org/jruby/jruby-complete/9.4.3.0/jruby-complete-9.4.3.0.jar" \
+    "https://repo1.maven.org/maven2/org/jruby/jruby-complete/9.4.3.0/jruby-complete-9.4.3.0.jar" \
   && echo "jruby=file://$HOME/.embulk/lib/jruby-complete-9.4.3.0.jar" > $HOME/.embulk/embulk.properties \
   && $HOME/.embulk/bin/embulk gem install embulk-output-td
 
