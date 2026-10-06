@@ -1,0 +1,35 @@
+name: docker-build
+
+# ベースイメージ更新でイメージのビルドが壊れても hadolint / trivy では検出できないため、
+# 実際に docker build を実行して検証する (Embulk 0.10.50 が対応しない Java への更新を防ぐ)。
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'Dockerfile'
+      - 'docker-entrypoint.sh'
+      - '.github/workflows/docker-build.yml'
+  pull_request:
+    branches: [main, master]
+    paths:
+      - 'Dockerfile'
+      - 'docker-entrypoint.sh'
+      - '.github/workflows/docker-build.yml'
+
+concurrency:
+  group: docker-build-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  docker-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: docker build
+        run: docker build --pull -t embulk-output-td:ci .
