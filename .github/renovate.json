@@ -51,6 +51,23 @@
       ]
     },
     {
+      "description": [
+        "eclipse-temurin の major 更新を止める。",
+        "Embulk 0.10.50 の自己実行形式 jar は Java 11 以上の 4 桁目を持つバージョン文字列を判定できず、",
+        "embulk gem install が失敗するため。Java 11 以上へ移る場合は java コマンドラインでの起動へ書き換えた別 PR で対応する。"
+      ],
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "eclipse-temurin"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "enabled": false
+    },
+    {
       "description": "Docker ベースイメージの更新には docker ラベルを付ける",
       "matchManagers": [
         "dockerfile",
