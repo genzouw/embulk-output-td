@@ -1,4 +1,4 @@
-FROM eclipse-temurin:8-jre-noble
+FROM eclipse-temurin:26.0.1_8-jre-noble
 
 LABEL maintainer "genzouw <genzouw@gmail.com>"
 
