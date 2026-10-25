@@ -24,4 +24,4 @@ permissions:
 
 jobs:
   actionlint:
-    uses: genzouw/ci-workflows/.github/workflows/actionlint.yml@24c2ed4fc9d619b79858e6e1f4b3ee4ef160f126 # v1.5.26
+    uses: genzouw/ci-workflows/.github/workflows/actionlint.yml@d0d986e6a91cfe89391eb7f46306c747203be56b # v1.5.27
